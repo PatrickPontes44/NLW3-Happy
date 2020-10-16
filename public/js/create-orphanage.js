@@ -6,7 +6,7 @@ L.tileLayer(
 
 
 const icon = L.icon({
-    iconUrl: './public/images/map-marker.svg',
+    iconUrl: 'images/map-marker.svg',
     iconSize: [58, 68],
     iconAnchor: [29, 68],
     popupAnchor: [170, 2]
@@ -65,6 +65,6 @@ function toggleSelect(event){
     const button = event.currentTarget
     button.classList.add("active");
 
-    const input = document.querySelector("[name='open_om_weekends']")
+    const input = document.querySelector("[name='open_on_weekends']")
     input.value = button.dataset.value;
 }

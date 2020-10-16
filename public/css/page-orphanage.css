@@ -109,6 +109,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    line-height: 1.5;
 }
 .open-details div{
     padding: 3.2rem 2.4rem;
@@ -124,10 +125,17 @@ main{
     color: #5c8599;
 }
 .open-details .open-on-weekends{
+    border-radius: 2rem;
+}
+.open-on-weekends.open{
     background: linear-gradient(154.16deg, #e6f7fb 7.85%, #ffffff 91.03%);
     border: 1px solid #a1e9c5;
-    border-radius: 2rem;
     color: #37c77f;
+}
+.open-on-weekends.closed{
+    background: linear-gradient(154.16deg, #fcf0f4 7.85%, #ffffff 91.03%);
+    border: 1px solid #ffbcd4;
+    color: #ff669d;
 }
 
 .primary-button{
@@ -143,6 +151,7 @@ main{
     align-items: center;
     justify-content: center;
     transition: background-color .2s;
+    text-decoration: none;
 }
 .primary-button:hover{
     background: #36cf82;

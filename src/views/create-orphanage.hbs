@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +11,26 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
 
-    <link rel="shortcut icon" href="./public/images/logo-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="stylesheet" href="./public/css/animations.css">
-    <link rel="stylesheet" href="./public/css/create-orphanage.css">
-    <link rel="stylesheet" href="./public/css/sidebar.css">
+    <link rel="shortcut icon" href="/images/logo-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/create-orphanage.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="create-orphanage">
         <aside class="animate-right sidebar">
-            <img src="./public/images/map-marker.svg" alt="happy">
+            <img src="/images/map-marker.svg" alt="happy">
             <footer>
                 <button onclick="history.back()">
-                    <img src="./public/images/arrow-back.svg" alt="voltar">
+                    <img src="/images/arrow-back.svg" alt="voltar">
                 </button>
             </footer>
         </aside>
 
         <main class="animate-appear with-sidebar">
-            <form action="">
+            <form action="save-orphanage" method="POST">
                 <fieldset>
                     <legend>Dados</legend>
 
@@ -58,7 +58,7 @@
                         <label for="images">Foto</label>
                         <div class="images-upload" id="images">
                             <div class="new-upload">
-                                <input type="text" name="images" placeholder="Cole o link da foto aqui" required>
+                                <input type="url" name="images" placeholder="Cole o link da foto aqui" required>
                                 <span onclick="deleteField(event)">x</span>
                             </div>
                         </div>
@@ -93,6 +93,6 @@
         </main>
     </div>
 
-    <script src="./public/js/create-orphanage.js"></script>
+    <script src="/js/create-orphanage.js"></script>
 </body>
 </html>
