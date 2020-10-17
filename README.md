@@ -1,3 +1,2 @@
 # NLW3-Happy
-
-## Minha Versão do projeto da NLW #3 Happy.
+Projeto realizado para a Next Level Week organizada pela [@Rocketseat](https://github.com/Rocketseat).
